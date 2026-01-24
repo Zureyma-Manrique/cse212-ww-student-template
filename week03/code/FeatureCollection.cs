@@ -1,4 +1,3 @@
-// ===== FILE: FeatureCollection.cs =====
 public class FeatureCollection
 {
     public List<Feature> Features { get; set; }

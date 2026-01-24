@@ -1,4 +1,3 @@
-// ===== FILE: SetsAndMaps.cs =====
 using System.Text.Json;
 
 public static class SetsAndMaps

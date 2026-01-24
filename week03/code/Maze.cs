@@ -1,4 +1,3 @@
-// ===== FILE: Maze.cs =====
 /// <summary>
 /// Defines a maze using a dictionary. The dictionary is provided by the
 /// user when the Maze object is created. The dictionary will contain the
