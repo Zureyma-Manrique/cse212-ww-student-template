@@ -5,9 +5,9 @@ public class LinkedList : IEnumerable<int>
     private Node? _head;
     private Node? _tail;
 
-    /// <summary>
+    
     /// Insert a new node at the front (i.e. the head) of the linked list.
-    /// </summary>
+    
     public void InsertHead(int value)
     {
         // Create new node
@@ -27,9 +27,9 @@ public class LinkedList : IEnumerable<int>
         }
     }
 
-    /// <summary>
+    
     /// Insert a new node at the back (i.e. the tail) of the linked list.
-    /// </summary>
+    
     public void InsertTail(int value)
     {
         // Create new node
@@ -50,9 +50,9 @@ public class LinkedList : IEnumerable<int>
     }
 
 
-    /// <summary>
+    
     /// Remove the first node (i.e. the head) of the linked list.
-    /// </summary>
+    
     public void RemoveHead()
     {
         // If the list has only one item in it, then set head and tail 
@@ -73,9 +73,9 @@ public class LinkedList : IEnumerable<int>
     }
 
 
-    /// <summary>
+    
     /// Remove the last node (i.e. the tail) of the linked list.
-    /// </summary>
+    
     public void RemoveTail()
     {
         // If the list has only one item in it, then set head and tail 
@@ -95,9 +95,9 @@ public class LinkedList : IEnumerable<int>
         }
     }
 
-    /// <summary>
+    
     /// Insert 'newValue' after the first occurrence of 'value' in the linked list.
-    /// </summary>
+    
     public void InsertAfter(int value, int newValue)
     {
         // Search for the node that matches 'value' by starting at the 
@@ -131,9 +131,9 @@ public class LinkedList : IEnumerable<int>
         }
     }
 
-    /// <summary>
+    
     /// Remove the first node that contains 'value'.
-    /// </summary>
+    
     public void Remove(int value)
     {
         // Search for the node that matches 'value' by starting at the head of the list.
@@ -167,9 +167,9 @@ public class LinkedList : IEnumerable<int>
         }
     }
 
-    /// <summary>
+    
     /// Search for all instances of 'oldValue' and replace the value to 'newValue'.
-    /// </summary>
+    
     public void Replace(int oldValue, int newValue)
     {
         // Start at the head and traverse the entire list
@@ -186,18 +186,18 @@ public class LinkedList : IEnumerable<int>
         }
     }
 
-    /// <summary>
+    
     /// Yields all values in the linked list
-    /// </summary>
+    
     IEnumerator IEnumerable.GetEnumerator()
     {
         // call the generic version of the method
         return this.GetEnumerator();
     }
 
-    /// <summary>
+    
     /// Iterate forward through the Linked List
-    /// </summary>
+    
     public IEnumerator<int> GetEnumerator()
     {
         var curr = _head; // Start at the beginning since this is a forward iteration.
@@ -208,9 +208,9 @@ public class LinkedList : IEnumerable<int>
         }
     }
 
-    /// <summary>
+    
     /// Iterate backward through the Linked List
-    /// </summary>
+    
     public IEnumerable Reverse()
     {
         var curr = _tail; // Start at the end since this is a backward iteration.
